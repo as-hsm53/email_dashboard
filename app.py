@@ -142,27 +142,31 @@ def send_emails_for_campaign(campaign_id, csv_file_path, image_path):
         reader = csv.DictReader(csv_file)
         for index, row in enumerate(reader):
             recipient = row.get('EMAIL')
-            company_name = row.get('COMPANY_EMAIL')  # Assuming there's a column for the company name
+            company_name = row.get('COMPANY_NAME')  # Ensure this matches your CSV column for company names
 
-            if not recipient:  # Check if recipient is None or empty
+            if not recipient:  # Check if recipient email is missing
                 logging.error("Recipient email is missing in the CSV. Skipping this entry.")
                 continue
 
-            # Check if email has already been sent
+            # Check if the email has already been sent
             if EmailLog.query.filter_by(campaign_id=campaign_id, recipient=recipient, status='sent').count() > 0:
                 logging.info(f"Email to {recipient} has already been sent. Skipping.")
                 continue
 
             smtp_info = smtp_emails[index % smtp_count]
 
-            # Send the email
-            success = send_email(recipient, company_name, campaign.subject, campaign.body, image_path, smtp_info)
+            # Dynamically format subject and body to replace {{COMPANY_NAME}}
+            subject = campaign.subject.replace("{{COMPANY_NAME}}", company_name)
+            body = campaign.body.replace("{{COMPANY_NAME}}", company_name)
+
+            # Send the email with formatted subject and body
+            success = send_email(recipient, company_name, subject, body, image_path, smtp_info)
             if success:
                 log = EmailLog(campaign_id=campaign_id, recipient=recipient, status='sent')
                 db.session.add(log)
                 db.session.commit()
 
-            # Add a delay of 2 seconds after each email
+            # Add a delay of 2 seconds after each email to avoid triggering spam filters
             time.sleep(2)
 
             # After every 8 emails, wait 5 minutes before continuing
