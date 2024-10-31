@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campaign Performance - {{ campaign.name }}</title>
+</head>
+<body>
+    <h1>Performance for Campaign: {{ campaign.name }}</h1>
+    
+    <h2>Metrics</h2>
+    <ul>
+        <li>Sent: {{ metrics.sent }}</li>
+        <li>Opened: {{ metrics.opened }}</li>
+        <li>Replied: {{ metrics.replied }}</li>
+        <li>Bounced: {{ metrics.bounced }}</li>
+    </ul>
+
+    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+</body>
+</html>

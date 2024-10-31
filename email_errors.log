@@ -1,0 +1,22 @@
+2024-10-31 13:42:37,072 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 13:42:37,072 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 13:42:37,072 - INFO -  * Restarting with stat
+2024-10-31 13:42:38,422 - WARNING -  * Debugger is active!
+2024-10-31 13:42:38,432 - INFO -  * Debugger PIN: 106-871-555
+2024-10-31 13:42:42,731 - INFO - 127.0.0.1 - - [31/Oct/2024 13:42:42] "GET / HTTP/1.1" 200 -
+2024-10-31 13:42:45,389 - INFO - 127.0.0.1 - - [31/Oct/2024 13:42:45] "GET /manage-campaign HTTP/1.1" 200 -
+2024-10-31 13:43:07,198 - INFO - 127.0.0.1 - - [31/Oct/2024 13:43:07] "[32mPOST /manage-campaign HTTP/1.1[0m" 302 -
+2024-10-31 13:43:07,261 - INFO - 127.0.0.1 - - [31/Oct/2024 13:43:07] "GET / HTTP/1.1" 200 -
+2024-10-31 14:26:57,549 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 14:26:57,549 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 14:26:57,564 - INFO -  * Restarting with stat
+2024-10-31 14:26:59,631 - WARNING -  * Debugger is active!
+2024-10-31 14:26:59,662 - INFO -  * Debugger PIN: 106-871-555
+2024-10-31 14:27:02,167 - INFO - 127.0.0.1 - - [31/Oct/2024 14:27:02] "GET / HTTP/1.1" 200 -
+2024-10-31 14:27:07,373 - INFO - 127.0.0.1 - - [31/Oct/2024 14:27:07] "GET /manage-campaign HTTP/1.1" 200 -
+2024-10-31 14:27:36,694 - INFO - 127.0.0.1 - - [31/Oct/2024 14:27:36] "[32mPOST /manage-campaign HTTP/1.1[0m" 302 -
+2024-10-31 14:27:36,741 - INFO - 127.0.0.1 - - [31/Oct/2024 14:27:36] "GET / HTTP/1.1" 200 -
+2024-10-31 14:27:49,394 - INFO - 127.0.0.1 - - [31/Oct/2024 14:27:49] "GET / HTTP/1.1" 200 -
+2024-10-31 14:30:29,637 - INFO -  * Detected change in 'D:\\trial\\EmailDashboard\\email_dashboard\\email_sender.py', reloading

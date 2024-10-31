@@ -1,0 +1,60 @@
+2024-10-31 12:58:42,131 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 12:58:42,131 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 12:58:42,147 - INFO -  * Restarting with stat
+2024-10-31 12:58:43,053 - WARNING -  * Debugger is active!
+2024-10-31 12:58:43,069 - INFO -  * Debugger PIN: 106-871-555
+2024-10-31 12:58:54,430 - INFO - 127.0.0.1 - - [31/Oct/2024 12:58:54] "GET / HTTP/1.1" 200 -
+2024-10-31 12:58:54,515 - INFO - 127.0.0.1 - - [31/Oct/2024 12:58:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-31 12:59:00,894 - INFO - 127.0.0.1 - - [31/Oct/2024 12:59:00] "[35m[1mGET /create-campaign HTTP/1.1[0m" 500 -
+2024-10-31 12:59:01,049 - INFO - 127.0.0.1 - - [31/Oct/2024 12:59:01] "GET /create-campaign?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-31 12:59:01,066 - INFO - 127.0.0.1 - - [31/Oct/2024 12:59:01] "GET /create-campaign?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-31 12:59:01,217 - INFO - 127.0.0.1 - - [31/Oct/2024 12:59:01] "GET /create-campaign?__debugger__=yes&cmd=resource&f=console.png&s=3TkALkKaqlxKQ9118EWx HTTP/1.1" 200 -
+2024-10-31 12:59:01,239 - INFO - 127.0.0.1 - - [31/Oct/2024 12:59:01] "GET /create-campaign?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-31 12:59:45,768 - INFO -  * Detected change in 'D:\\trial\\EmailDashboard\\email_dashboard\\app.py', reloading
+2024-10-31 12:59:45,899 - INFO -  * Restarting with stat
+2024-10-31 12:59:47,305 - WARNING -  * Debugger is active!
+2024-10-31 12:59:47,310 - INFO -  * Debugger PIN: 106-871-555
+2024-10-31 13:00:49,965 - INFO - 127.0.0.1 - - [31/Oct/2024 13:00:49] "GET / HTTP/1.1" 200 -
+2024-10-31 13:01:27,553 - INFO -  * Detected change in 'D:\\trial\\EmailDashboard\\email_dashboard\\app.py', reloading
+2024-10-31 13:01:27,658 - INFO -  * Restarting with stat
+2024-10-31 13:01:28,931 - WARNING -  * Debugger is active!
+2024-10-31 13:01:28,937 - INFO -  * Debugger PIN: 106-871-555
+2024-10-31 13:02:48,855 - INFO -  * Detected change in 'D:\\trial\\EmailDashboard\\email_dashboard\\app.py', reloading
+2024-10-31 13:02:49,015 - INFO -  * Restarting with stat
+2024-10-31 13:02:50,256 - WARNING -  * Debugger is active!
+2024-10-31 13:02:50,256 - INFO -  * Debugger PIN: 106-871-555
+2024-10-31 13:02:53,314 - INFO -  * Detected change in 'D:\\trial\\EmailDashboard\\email_dashboard\\app.py', reloading
+2024-10-31 13:02:53,455 - INFO -  * Restarting with stat
+2024-10-31 13:02:54,550 - WARNING -  * Debugger is active!
+2024-10-31 13:02:54,550 - INFO -  * Debugger PIN: 106-871-555
+2024-10-31 13:03:09,508 - INFO - 127.0.0.1 - - [31/Oct/2024 13:03:09] "GET / HTTP/1.1" 200 -
+2024-10-31 13:03:11,573 - INFO - 127.0.0.1 - - [31/Oct/2024 13:03:11] "[35m[1mGET /create-campaign HTTP/1.1[0m" 500 -
+2024-10-31 13:03:11,706 - INFO - 127.0.0.1 - - [31/Oct/2024 13:03:11] "[36mGET /create-campaign?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-31 13:03:11,706 - INFO - 127.0.0.1 - - [31/Oct/2024 13:03:11] "[36mGET /create-campaign?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-31 13:03:11,778 - INFO - 127.0.0.1 - - [31/Oct/2024 13:03:11] "GET /create-campaign?__debugger__=yes&cmd=resource&f=console.png&s=IPvWBnhkrAwkxbeA7CMc HTTP/1.1" 200 -
+2024-10-31 13:04:23,635 - INFO -  * Detected change in 'D:\\trial\\EmailDashboard\\email_dashboard\\app.py', reloading
+2024-10-31 13:04:23,793 - INFO -  * Restarting with stat
+2024-10-31 13:04:25,420 - WARNING -  * Debugger is active!
+2024-10-31 13:04:25,426 - INFO -  * Debugger PIN: 106-871-555
+2024-10-31 13:12:54,687 - INFO -  * Detected change in 'D:\\trial\\EmailDashboard\\email_dashboard\\email_sender.py', reloading
+2024-10-31 13:12:54,882 - INFO -  * Restarting with stat
+2024-10-31 13:12:55,878 - WARNING -  * Debugger is active!
+2024-10-31 13:12:55,878 - INFO -  * Debugger PIN: 106-871-555
+2024-10-31 13:13:02,975 - INFO -  * Detected change in 'D:\\trial\\EmailDashboard\\email_dashboard\\email_sender.py', reloading
+2024-10-31 13:13:03,077 - INFO -  * Restarting with stat
+2024-10-31 13:13:04,194 - WARNING -  * Debugger is active!
+2024-10-31 13:13:04,211 - INFO -  * Debugger PIN: 106-871-555
+2024-10-31 13:13:07,250 - INFO -  * Detected change in 'D:\\trial\\EmailDashboard\\email_dashboard\\app.py', reloading
+2024-10-31 13:13:07,372 - INFO -  * Restarting with stat
+2024-10-31 13:17:50,661 - INFO -  * Restarting with stat
+2024-10-31 13:18:38,191 - INFO -  * Restarting with stat
+2024-10-31 13:18:46,819 - INFO -  * Restarting with stat
+2024-10-31 13:19:55,521 - INFO -  * Restarting with stat
+2024-10-31 13:20:20,970 - INFO -  * Restarting with stat
+2024-10-31 13:22:57,916 - INFO -  * Restarting with stat
+2024-10-31 13:23:33,529 - INFO -  * Restarting with stat
+2024-10-31 13:25:25,578 - INFO -  * Restarting with stat
+2024-10-31 13:32:58,551 - INFO -  * Restarting with stat
+2024-10-31 13:33:05,604 - INFO -  * Restarting with stat
+2024-10-31 13:35:24,622 - INFO -  * Restarting with stat

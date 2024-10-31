@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Dashboard</h2>
+<a href="{{ url_for('manage_campaign') }}">Create New Campaign</a>
+
+<h2>Your Campaigns</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Campaign Name</th>
+            <th>CSV File Path</th>
+            <th>Subject</th>
+            <th>Body</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for campaign in campaigns %}
+            <tr>
+                <td>{{ campaign.name }}</td>
+                <td>{{ campaign.csv_file_path }}</td>
+                <td>{{ campaign.subject }}</td>
+                <td>{{ campaign.body }}</td>
+                <td>
+                    <a href="{{ url_for('campaign_performance', campaign_id=campaign.id) }}">View Performance</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">No campaigns available.</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>

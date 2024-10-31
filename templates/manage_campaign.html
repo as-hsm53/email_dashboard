@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Email Campaign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .metrics {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .metrics h3 {
+            margin: 0 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Manage Email Campaign</h2>
+
+<form action="{{ url_for('manage_campaign') }}" method="POST" enctype="multipart/form-data">
+    <label for="campaign_name">Campaign Name:</label>
+    <input type="text" id="campaign_name" name="campaign_name" required>
+
+    <label for="csv_file">Upload CSV file:</label>
+    <input type="file" id="csv_file" name="csv_file" accept=".csv" required>
+
+    <label for="subject">Subject (use {{COMPANY_NAME}} and {{EMAIL}} as placeholders):</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="body">Email Body (use {{COMPANY_NAME}} and {{EMAIL}} as placeholders):</label>
+    <textarea id="body" name="body" rows="6" required></textarea>
+
+    <label for="image_file">Upload an Image:</label>
+    <input type="file" id="image_file" name="image_file" accept="image/*" required>
+
+    <button type="submit">Create Campaign & Send Emails</button>
+</form>
+
+<div>
+    <a href="{{ url_for('dashboard') }}">Return to Dashboard</a>
+</div>
+
+<!-- Metrics Section -->
+{% if campaign_metrics %}
+<div class="metrics">
+    <h3>Campaign Metrics for "{{ campaign_metrics.name }}"</h3>
+    <p><strong>Total Emails Sent:</strong> {{ campaign_metrics.total_sent }}</p>
+    <p><strong>Emails Delivered:</strong> {{ campaign_metrics.delivered }}</p>
+    <p><strong>Emails Opened:</strong> {{ campaign_metrics.opened }}</p>
+    <p><strong>Open Rate:</strong> {{ campaign_metrics.open_rate }}%</p>
+    <p><strong>Bounced:</strong> {{ campaign_metrics.bounced }}</p>
+</div>
+{% endif %}
+
+</body>
+</html>
